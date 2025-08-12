@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name ="viewport"
+            content="width=device-width,initial-scale=1.0"/>
+            <link rel="stylesheet" href="pass.css"/>
+            <title>Password Creator </title>
+
+    </head>
+
+            <body>
+                <h1>Password Generator</h1>
+                <div class="generator">
+                    <div class="password">
+                        <input id="int" type="text" value="test" />
+                        <button id ="copy_button">COPY</button>
+                    </div>
+                    <div class ="range">
+                        <input id="lengthSlider" type="range" min="4" max="24" value="8"/>
+                        <span>8</span>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <label>
+                                <input type="checkbox" id="lowercasecb" checked />
+                                <span>a-z</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                            <input type="checkbox" id="uppercasecb"/>
+                            <span>A-Z</span>
+                        </label>    
+                        </div>
+                        <div class="option">
+                            <label>
+                                <input type="checkbox" id="digitscb" />
+                                <span>0-9</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <label>
+                                <input type="checkbox" id="specialscb" />
+                            <span>!@#$%^&*</span>
+                        </label>
+                        </div>
+                    </div>
+
+
+                    <div>
+                    <button id="create_button" class="generate">
+                        CREATE
+                    </button>
+                </div>
+
+
+                <script src="pass.js"></script>
+    </body>    
+</html>
